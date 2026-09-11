@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AMALFI | イタリアンレストラン</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Noto+Serif+JP:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#top" class="logo">AMALFI</a>
+      <nav class="nav">
+        <a href="#concept">Concept</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#access">Access</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="top" class="hero">
+      <div class="hero__overlay"></div>
+      <div class="container hero__inner">
+        <p class="hero__eyebrow">Ristorante Italiano</p>
+        <h1 class="hero__title">AMALFI</h1>
+        <p class="hero__lead">南イタリアの味を、いつもの一皿に。</p>
+        <a href="#access" class="button button--ghost">ご予約・アクセス</a>
+      </div>
+    </section>
+
+    <section id="concept" class="section">
+      <div class="container">
+        <p class="section__eyebrow">Concept</p>
+        <h2 class="section__title">土地の恵みを、シンプルに。</h2>
+        <p class="section__lead">
+          AMALFI（アマルフィ）は、イタリア・アマルフィ海岸の家庭料理をベースにした一皿をお届けするリストランテです。
+          その日仕入れた新鮮な魚介と野菜、じっくり煮込んだトマトソース、自家製生パスタ——
+          飾らない素材の味を、シンプルな調理で引き立てます。
+          大切な人と過ごす時間に寄り添う、心地よい一皿と時間をご用意しています。
+        </p>
+      </div>
+    </section>
+
+    <section id="menu" class="section section--alt">
+      <div class="container">
+        <p class="section__eyebrow">Menu</p>
+        <h2 class="section__title">おすすめのお料理</h2>
+
+        <div class="menu-category">
+          <h3 class="menu-category__title">Antipasti — 前菜</h3>
+          <ul class="menu-list">
+            <li class="menu-item">
+              <span class="menu-item__name">生ハムとブッラータチーズ</span>
+              <span class="menu-item__leader"></span>
+              <span class="menu-item__price">¥2,200</span>
+            </li>
+            <li class="menu-item">
+              <span class="menu-item__name">自家製サルデーニャ風マリネ</span>
+              <span class="menu-item__leader"></span>
+              <span class="menu-item__price">¥1,900</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu-category">
+          <h3 class="menu-category__title">Pasta — パスタ</h3>
+          <ul class="menu-list">
+            <li class="menu-item">
+              <span class="menu-item__name">自家製生パスタ ボンゴレ</span>
+              <span class="menu-item__desc">あさりの旨みを白ワインで引き立てた、王道の一皿。</span>
+              <span class="menu-item__leader"></span>
+              <span class="menu-item__price">¥2,400</span>
+            </li>
+            <li class="menu-item">
+              <span class="menu-item__name">ボロネーゼ</span>
+              <span class="menu-item__desc">牛肉と赤ワインでじっくり煮込んだ、濃厚ミートソース。</span>
+              <span class="menu-item__leader"></span>
+              <span class="menu-item__price">¥2,300</span>
+            </li>
+            <li class="menu-item">
+              <span class="menu-item__name">ウニのクリームタリオリーニ</span>
+              <span class="menu-item__desc">濃厚なウニと生クリームを絡めた、贅沢な一皿。</span>
+              <span class="menu-item__leader"></span>
+              <span class="menu-item__price">¥3,200</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu-category">
+          <h3 class="menu-category__title">Pizza — ピッツァ</h3>
+          <ul class="menu-list">
+            <li class="menu-item">
+              <span class="menu-item__name">マルゲリータ</span>
+              <span class="menu-item__desc">薪窯で焼き上げる、もっちり生地とフレッシュトマト。</span>
+              <span class="menu-item__leader"></span>
+              <span class="menu-item__price">¥2,100</span>
+            </li>
+            <li class="menu-item">
+              <span class="menu-item__name">4種チーズのクアトロフォルマッジ</span>
+              <span class="menu-item__leader"></span>
+              <span class="menu-item__price">¥2,500</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu-category">
+          <h3 class="menu-category__title">Secondi — メイン</h3>
+          <ul class="menu-list">
+            <li class="menu-item">
+              <span class="menu-item__name">本日の鮮魚のアクアパッツァ</span>
+              <span class="menu-item__desc">その日仕入れた魚介をまるごと煮込んだ、旨みたっぷりの一皿。</span>
+              <span class="menu-item__leader"></span>
+              <span class="menu-item__price">¥3,100</span>
+            </li>
+            <li class="menu-item">
+              <span class="menu-item__name">仔牛肉のオッソブーコ</span>
+              <span class="menu-item__desc">骨付き仔牛肉を長時間煮込んだ、柔らかな一皿。</span>
+              <span class="menu-item__leader"></span>
+              <span class="menu-item__price">¥3,800</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu-category">
+          <h3 class="menu-category__title">Dolci — デザート</h3>
+          <ul class="menu-list">
+            <li class="menu-item">
+              <span class="menu-item__name">自家製ティラミス</span>
+              <span class="menu-item__leader"></span>
+              <span class="menu-item__price">¥1,200</span>
+            </li>
+            <li class="menu-item">
+              <span class="menu-item__name">パンナコッタ 季節のベリーソース</span>
+              <span class="menu-item__leader"></span>
+              <span class="menu-item__price">¥1,100</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section">
+      <div class="container">
+        <p class="section__eyebrow">Gallery</p>
+        <h2 class="section__title">店内の様子</h2>
+        <div class="gallery">
+          <div class="gallery__item gallery__item--photo">
+            <img src="https://images.pexels.com/photos/35665063/pexels-photo-35665063.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="暖かみのある店内のテーブルセッティング" loading="lazy">
+          </div>
+          <div class="gallery__item gallery__item--photo">
+            <img src="https://images.pexels.com/photos/18754796/pexels-photo-18754796.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="ピザやパスタなどイタリア料理がたくさん並んだテーブル" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="access" class="section section--alt">
+      <div class="container">
+        <p class="section__eyebrow">Access</p>
+        <h2 class="section__title">店舗情報</h2>
+        <dl class="info">
+          <div class="info__row">
+            <dt>店名</dt>
+            <dd>Ristorante AMALFI（リストランテ アマルフィ）</dd>
+          </div>
+          <div class="info__row">
+            <dt>住所</dt>
+            <dd>〒000-0000 東京都◯◯区◯◯ 1-2-3</dd>
+          </div>
+          <div class="info__row">
+            <dt>営業時間</dt>
+            <dd>11:30–14:30（L.O.14:00） / 17:30–22:00（L.O.21:30）</dd>
+          </div>
+          <div class="info__row">
+            <dt>定休日</dt>
+            <dd>月曜日</dd>
+          </div>
+          <div class="info__row">
+            <dt>電話</dt>
+            <dd>00-0000-0000</dd>
+          </div>
+        </dl>
+        <a href="mailto:info@example.com" class="button">お問い合わせ</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Ristorante AMALFI. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
