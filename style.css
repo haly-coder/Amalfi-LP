@@ -77,32 +77,12 @@ a {
   font-size: 0.9rem;
   letter-spacing: 0.04em;
   font-weight: 400;
-  transition: color 0.2s, font-weight 0.2s, font-size 0.2s ease;
+  transition: color 0.2s;
 }
 
-.nav a.nav--focused,
-.nav a:hover {
-  font-size: 1.15rem;
-}
-
-.nav a::after {
-  content: '→';
-  display: inline-block;
-  font-weight: 700;
+.nav a:hover,
+.nav a.nav--focused {
   color: #000;
-  opacity: 0;
-  transform: scale(0.5) translateX(-4px);
-  transition: opacity 0.25s ease, transform 0.25s ease;
-}
-
-.nav a:hover {
-  color: #000;
-  font-weight: 700;
-}
-
-.nav a:hover::after {
-  opacity: 1;
-  transform: scale(1.6) translateX(2px);
 }
 
 /* Hero */
@@ -376,10 +356,6 @@ a {
   }
   .nav a {
     font-size: 0.78rem;
-  }
-  .nav a.nav--focused,
-  .nav a:hover {
-    font-size: 0.95rem;
   }
   .hero {
     min-height: 60vh;
