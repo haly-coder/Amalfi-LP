@@ -1,6 +1,6 @@
 :root {
-  --color-bg: #fdf5ea;
-  --color-bg-alt: #f7e6d1;
+  --color-bg: #eec48a;
+  --color-bg-alt: #f6dfb4;
   --color-text: #3a2417;
   --color-muted: #8a6a52;
   --color-accent: #c1502e;
@@ -69,7 +69,12 @@ a {
   font-size: 0.9rem;
   letter-spacing: 0.04em;
   font-weight: 400;
-  transition: color 0.2s, font-weight 0.2s;
+  transition: color 0.2s, font-weight 0.2s, font-size 0.2s ease;
+}
+
+.nav a.nav--focused,
+.nav a:hover {
+  font-size: 1.15rem;
 }
 
 .nav a::after {
@@ -183,6 +188,11 @@ a {
   font-size: 1.05rem;
   letter-spacing: 0.08em;
   margin-bottom: 8px;
+  transition: font-size 0.2s ease;
+}
+
+.section__eyebrow--focused {
+  font-size: 1.4rem;
 }
 
 .section__title {
@@ -190,6 +200,25 @@ a {
   font-weight: 600;
   letter-spacing: 0.02em;
   margin-bottom: 28px;
+}
+
+.section__title-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 14px;
+  margin-bottom: 28px;
+}
+
+.section__title-row .section__title {
+  margin-bottom: 0;
+}
+
+.section__subtitle {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1.05rem;
+  color: var(--color-muted);
+  letter-spacing: 0.04em;
 }
 
 .section__lead {
@@ -204,7 +233,7 @@ a {
 }
 
 .menu-category:first-of-type {
-  margin-top: 16px;
+  margin-top: 40px;
 }
 
 .menu-category__title {
