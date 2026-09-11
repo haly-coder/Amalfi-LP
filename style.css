@@ -14,6 +14,10 @@
   padding: 0;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Noto Serif JP', serif;
   color: var(--color-text);
@@ -44,9 +48,13 @@ a {
 
 .header__inner {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  height: 68px;
+  gap: 8px 16px;
+  min-height: 68px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .logo {
@@ -357,13 +365,38 @@ a {
 }
 
 @media (max-width: 600px) {
+  .container {
+    padding: 0 18px;
+  }
+  .logo {
+    font-size: 1.2rem;
+  }
   .nav {
-    gap: 16px;
+    gap: 10px 14px;
+  }
+  .nav a {
+    font-size: 0.78rem;
+  }
+  .nav a.nav--focused,
+  .nav a:hover {
+    font-size: 0.95rem;
   }
   .hero {
     min-height: 60vh;
   }
+  .hero__title {
+    font-size: clamp(2.4rem, 13vw, 6.5rem);
+    letter-spacing: 0.06em;
+  }
   .section {
     padding: 64px 0;
+  }
+  .info__row {
+    flex-direction: column;
+    gap: 2px;
+  }
+  .info__row dt {
+    width: auto;
+    font-size: 0.8rem;
   }
 }
