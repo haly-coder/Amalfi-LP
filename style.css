@@ -14,10 +14,6 @@
   padding: 0;
 }
 
-html {
-  overflow-x: hidden;
-}
-
 body {
   font-family: 'Noto Serif JP', serif;
   color: var(--color-text);
